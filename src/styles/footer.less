@@ -1,0 +1,45 @@
+.tabs-footer {
+  width: 100%; // Don't change
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-color: @main-foreground;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.nav-tabs > li, .nav-pills > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+  text-align:center;
+}
+
+.media-body {
+  text-overflow: ellipsis;
+}
+
+.nav-tabs > li > a {
+  color: @button-inactive;
+  &:hover {
+    color: @button-active;
+  }
+  @media @mobile {
+    content: "mobile";
+    padding: 8px 20px;
+  }
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: @button-active;
+    border-bottom: 3px solid @button-active;
+    cursor: default;
+}

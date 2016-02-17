@@ -1,0 +1,81 @@
+.tv-show-list-item {
+  border: none;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &:hover {
+    border: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: @main-foreground;
+  }
+  &:active {
+    background-color: #eee;
+    border: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: @main-foreground;
+  }
+}
+
+.media-body {
+  overflow: hidden;
+}
+
+.search-list-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tv-show-season {
+  border: 0;
+  &--open {
+    border: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: @main-foreground;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.episode-item {
+  &:extend(.list-group-item);
+
+  &--watched {
+    &:extend(.list-group-item);
+    background-color: #eee;
+  }
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.tv-show-season-list-container {
+  &:extend(.container);
+  @media @mobile {
+    content: "mobile";
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.previous-search-item {
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.input-group-btn :not(.btn-success).btn, .btn-primary {
+  background-color: rgba(0, 185, 255, 0.4);
+  border-color: rgba(0, 185, 255, 0.4);
+}

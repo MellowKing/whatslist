@@ -1,0 +1,29 @@
+@import '~bootstrap/less/bootstrap';
+@import './constants';
+@import './footer';
+@import './headerbar';
+@import './tv-show-list-item';
+
+body {
+  padding-bottom: 60px;
+}
+
+.jumbotron-image, :not(.jumbotron-image) > .jumbotron {
+  -webkit-clip-path: none;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jumbotron {
+  padding: 0;
+}
+
+.jumbotron-container {
+  background-color: @background-with-alpha;
+}
+
+p {
+  text-align: left;
+}

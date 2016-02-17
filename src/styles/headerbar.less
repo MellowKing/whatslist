@@ -1,0 +1,54 @@
+.headerbar {
+  &:extend(.navbar);
+  &:extend(.navbar-default);
+  padding: 4px;
+  height: 48px;
+  min-height: 42px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 0px;
+}
+
+h2 {
+  color: @main-foreground;
+}
+/**
+body {
+  background-image: url('../images/balls.svg')
+}
+*/
+
+.page-title {
+  vertical-align: center;
+}
+
+.searchbar {
+  &:extend(.form-control);
+  height: 40px;
+  border-color: @main-foreground;
+  border: 0;
+  background-color: @background-with-alpha;
+  color: white;
+}
+
+.searchbar-container {
+  &:extend(.container);
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    white;
+}
